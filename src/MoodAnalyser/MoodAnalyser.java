@@ -7,18 +7,18 @@ public class MoodAnalyser {
 
     }
 
-    public MoodAnalyser(String message){
+    public MoodAnalyser(String message) {
         this.message = message;
     }
 
-    public String analyseMood() {
-
-        if(this.message.contains("Sad")) {
-            return "SAD";
-        }
-        else {
+    public String analyzeMood() {
+        try {
+            if (message.contains("sad"))
+                return "SAD";
+            else
+                return "HAPPY";
+        } catch (Exception e) {
             return "HAPPY";
         }
     }
 }
-
