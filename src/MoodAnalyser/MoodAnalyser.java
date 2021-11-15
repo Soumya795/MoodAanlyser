@@ -3,10 +3,6 @@ package MoodAnalyser;
 public class MoodAnalyser {
     String message;
 
-    public MoodAnalyser() {
-
-    }
-
     public MoodAnalyser(String message) {
         this.message = message;
     }
@@ -24,5 +20,4 @@ public class MoodAnalyser {
             throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.ENTERED_NULL, "Please enter proper message!");
         }
     }
-}
-
+    }
